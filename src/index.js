@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div className="general container-fluid">
+      <h1 className="text-center m-5"> 📚 Dictionary </h1>
     <App />
+    </div>
   </React.StrictMode>
 );
 
