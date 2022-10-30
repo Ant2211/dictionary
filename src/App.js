@@ -1,10 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 export default function App() {
+  let [keyword, setKeyword] = useState ("");
+
+  function search(event) {
+    event.preventDefault();
+    alert(`Searching for ${keyword}`)
+    }
+   function handleKeyword(event) {
+    setKeyword(event.target.value);
+    
+   }
   return (
     <div className="App">
-      <h1> Test </h1>
+      <form onSubmit={search}>
+        <input type="search" onChange={handleKeyword} />
+      </form>
     </div>
   );
 }
