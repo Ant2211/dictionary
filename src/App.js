@@ -25,7 +25,7 @@ setResults(response.data[0]);
   return (
     <div className="App">
       <form onSubmit={search}>
-        <input type="search" onChange={handleKeyword} />
+        <input type="search" placeholder="enter a word" className="m-4" onChange={handleKeyword} />
       </form>
       <Results results={results} />
     </div>
