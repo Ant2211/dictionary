@@ -1,5 +1,40 @@
 .general {
+  background: rgb(233, 240, 241);
   width: 900px;
   border: 1px solid grey;
   border-radius: 4px;
+}
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+.input {
+  width: 75%;
+  display: block;
+  padding: 6px 4px;
+  margin: o auto;
+  border-radius: 5px;
+}
+.search-word {
+   font-size: 48px;
+   color: rgb(42, 3, 105);
+}
+.suggested-word {
+  font-size: 12px;
+  opacity: 0.3;
+  margin-top: 10px;
+}
+.meaning {
+  font-size: 24px;
+  color: rgb(6, 6, 14);
+  opacity: 0.3;
+  margin: 10px;
+}
+.definition {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }

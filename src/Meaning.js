@@ -2,15 +2,15 @@ import React from "react";
 import "./App.css";
 
 export default function Meaning(props) {
-  console.log(props.meaning);
+  
     return (
         <div>
-        <h4> {props.meaning.partOfSpeech} </h4>
+        <h4 className="meaning"> {props.meaning.partOfSpeech} </h4>
         {props.meaning.definitions.map (function (definition , index)
         {
             return (
                 <div key={index}>
-                    <div> <strong> Definition: </strong>
+                    <div className="definition"> 
                         {definition.definition}
                         <br />
                          <em>{definition.example}</em>

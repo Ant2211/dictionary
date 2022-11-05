@@ -23,10 +23,13 @@ setResults(response.data[0]);
     
    }
   return (
-    <div className="App">
+    <div className="App container-fluid">
+      <section>
       <form onSubmit={search}>
-        <input type="search" placeholder="enter a word" className="m-4" onChange={handleKeyword} />
+        <input type="search" placeholder="enter a word" className="input" onChange={handleKeyword} />
+      <h6 className="suggested-word">Suggested words: water, sun, earth etc </h6>
       </form>
+      </section>
       <Results results={results} />
     </div>
   );
